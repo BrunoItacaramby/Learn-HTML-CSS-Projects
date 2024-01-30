@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(73, 73, 73);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.menu-content {
+    display: flex;
+    margin: 15px 15px;
+}
+
+.menu-content h3 a {
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  font-size: 15px;
+}
