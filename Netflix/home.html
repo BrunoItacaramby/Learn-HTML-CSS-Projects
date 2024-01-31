@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #gradient-container {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%), url('https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/3dd3d07e-9e02-4fa5-92a6-bb71c00b1aeb/BR-pt-20240107-trifectadaily-perspective_alpha_website_large.jpg');
+            background-size: auto;
+            height: 700px;
+            width: auto;
+            position: relative;
+            color: #fff;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        p {
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+
+        .logo-head {
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15%;
+        }
+
+        @media (max-width: 768px) {
+            .logo-head {
+                margin: auto;
+                justify-content: space-between;
+                margin: 0 5%;
+                align-items: center;
+            }
+
+            #logo-img {
+                width: 100%;
+                max-width: 74px;
+                height: 100%;
+                max-height: 20px;
+            }            
+
+        select[name="idioma"] {
+            width: 100%;
+            max-width: auto;            
+        }
+
+        }
+
+
+        #logo-img {
+            width: 148px;
+            height: 40px;
+        }
+
+        .language-and-button {
+            text-align: center;
+            display: flex;
+        }
+
+        #button {
+            padding: 10px;
+            margin-left: 15px;
+            background-color: rgb(229, 9, 20);
+            border: none;
+            border-radius: 5px;
+            font-size: min(5.5vw, 15px);
+            color: white;
+        }
+
+        select[name="idioma"] {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            border: 2px white solid;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 5px 5px;
+        }
+
+        select[name="idioma"] option {
+            color: black;
+            background-color: white;
+        }
+
+        #body-middle {
+            justify-content: center;
+            align-items: center;
+            margin: 130px 0;
+            text-align: center;
+        }
+
+        #body-middle h1 {
+            margin: 3px;
+            font-size: min(5.5vw, 48px);
+            text-size-adjust: 100%;
+            font-weight: 900;
+        }
+
+        #body-middle h2,
+        #body-middle h3 {
+            padding: 15px;
+            margin: 3px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        input[type="email"] {
+            background-color: rgba(70, 90, 126, 0.4);
+            color: white;
+            border: 2px gray solid;
+            border-radius: 5px;
+            font-size: 17px;
+            width: 350px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        input[type="email"]::placeholder {
+            color: #ffffff;
+            /* Substitua #909090 pela cor desejada */
+        }
+
+        button[type="button"] {
+            margin-left: 15px;
+            background-color: rgb(229, 9, 20);
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            max-height: 65px;
+        }
+
+        .middle-bottom-block {
+            margin: 0 auto 0 auto;
+            width: 90%;
+            height: 22%;
+            min-height: 22%;
+            background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 5px;
+            align-items: center;
+        }
+
+        .email-container {
+            padding: 15px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #popcorn-bucket {
+            max-width: 25%;
+            max-height: 25%;
+            min-width: 18%;
+            min-height: 18%;
+        }
+
+        .svg-div,
+        .svg-div h2,
+        .svg-div h3 {
+            justify-content: inherit;
+            display: flex;
+            align-items: center;
+        }
+
+        .svg-div h3 {
+            font-weight: normal;
+            text-align: left;
+            font-size: min(3.5vw, 20px);
+            margin: 5px 0;
+        }
+
+        .svg-div h2 {
+            font-weight: bold;
+            text-align: left;
+            font-size: min(3.5vw, 20px);
+        }
+
+        h3 a {
+            color: #448ef4;
+        }
+
+        .middle-bottom-block-2 {
+            padding: 50px 0 70px;
+            background-color: black;
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .middle-bottom-block-2 {
+                padding: 10px 20px;
+            }
+
+            .middle-bottom-block-2 div,
+            .middle-bottom-block-2 img {
+                width: 100%;
+                /* Faz com que o conteúdo ocupe toda a largura */
+                max-width: 600px;
+                /* Limita a largura máxima */
+                text-align: center;
+            }
+
+            .middle-bottom-block-2 div {
+                padding: 15px 0;
+            }
+
+            #body-middle {
+                margin-top: 80px;
+            }
+        }
+
+        .middle-bottom-block-3 {
+            padding: 50px 0 70px;
+            background-color: black;
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .middle-bottom-block-3 {
+                padding: 0 20px;
+            }
+
+            .middle-bottom-block-3 div,
+            .middle-bottom-block-3 img {
+                width: 100%;
+                /* Faz com que o conteúdo ocupe toda a largura */
+                max-width: 600px;
+                /* Limita a largura máxima */
+                text-align: center;
+            }
+
+            .middle-bottom-block-3 div {
+                padding: 15px 0;
+            }
+
+        }
+
+        .middle-bottom-block-4 {
+            padding: 50px 0 70px;
+            background-color: black;
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .middle-bottom-block-4 {
+                padding: 10px 20px;
+            }
+
+            .middle-bottom-block-4 div,
+            .middle-bottom-block-4 img {
+                width: 100%;
+                /* Faz com que o conteúdo ocupe toda a largura */
+                max-width: 600px;
+                /* Limita a largura máxima */
+                text-align: center;
+            }
+
+            .middle-bottom-block-4 div {
+                padding: 15px 0;
+            }
+
+            #body-middle {
+                margin-top: 80px;
+            }
+        }
+
+        .middle-bottom-block-5 {
+            padding: 50px 300px 70px;
+            background-color: black;
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .middle-bottom-block-5 {
+                padding: 10px 20px;
+                justify-content: center;
+                display: flex;
+            }
+
+            .middle-bottom-block-5 div,
+            .middle-bottom-block-5 img {
+                width: 100%;
+                /* Faz com que o conteúdo ocupe toda a largura */
+                max-width: 300px;
+                /* Limita a largura máxima */
+                text-align: center;
+            }
+
+            .middle-bottom-block-5 div {
+                padding: 15px 0;
+            }
+
+            #body-middle {
+                margin-top: 80px;
+            }
+        }
+
+        /* Media Query para telas menores */
+        @media (max-width: 768px) {
+            .faq-container {
+                margin: auto;
+                width: 100%;
+                min-width: 95%;
+            }
+
+            .faq-question::after {
+                line-height: 0;
+
+                font-weight: lighter;
+            }
+        }
+
+        .faq-container {
+            background-color: rgb(45, 45, 45);
+            max-width: 70%;
+            margin: auto
+        }
+
+        .faq-question.active::after {
+            content: '+';
+            /* Altera para o símbolo de menos */
+            /* Adiciona uma rotação para efeito visual */
+            transform: rotate(45deg);
+            transition: 0.08s;
+        }
+
+        .faq-title {
+            text-align: left;
+            margin: 30px 0;
+        }
+
+        .faq-title {
+            font-size: min(6.5vw, 50px);
+            color: white;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .faq-item {
+            border-bottom: 8px solid black;
+            padding: 10px 10px;
+        }
+
+        .faq-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: 0.5s;
+        }
+
+        .faq-item h2 {
+            color: white;
+            font-weight: normal;
+            font-size: min(3.5vw, 25px);
+        }
+
+        .faq-question {
+            cursor: pointer;
+            padding: 15px 15px;
+            margin: 0;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 10px;
+            font-size: 60px;
+            /* Aqui você pode adicionar transição para o giro do pseudo-elemento */
+            transition: transform 0.2s;
+            font-weight: lighter;
+            line-height: 0.2;
+        }
+
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-in-out;
+            /* Adiciona a transição a max-height */
+            padding-left: 10px;
+            border-top: black solid 1px;
+        }
+
+        .faq-answer.open {
+            max-height: 1000px;
+            /* Adjust this value based on your content */
+        }
+
+        .faq-answer p {
+            color: white;
+            font-size: min(3.5vw, 22px);
+            margin: 15px
+        }
+
+        .list ul {
+            list-style: none;
+            display: inline-flex;
+            justify-content: left;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .list li {
+            display: inline-flex;
+            justify-content: left;
+
+            flex-wrap: wrap;
+            margin: 8px;
+            flex: 0 0 calc(33.333% - 150px);
+        }
+
+        .list a {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        .footer h3 {
+            color: white;
+        }
+
+        .footer {
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15%;
+        }
+
+        @media (max-width: 768px) {
+            .list {
+                margin: auto;
+                width: 300px;
+                min-width: 95%;
+                justify-content: center;
+
+
+            }
+
+            footer {
+                justify-content: center;
+            }
+
+            .list li {
+                display: inline-flex;
+                justify-content: left;
+                flex-wrap: wrap;
+                margin: 15px 90px 15px 15px;
+
+                flex: 0 0 calc(33.333% - 35px);
+            }
+
+            .footer {
+                margin: 0 15px;
+            }
+
+            .list ul {
+                list-style: none;
+                display: inline-flex;
+                justify-content: left;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="gradient-container">
+
+        <div class="logo-head">
+
+            <img id="logo-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png"
+                alt="">
+
+            <div class="language-and-button">
+                <select name="idioma" id="idioma-topo">
+                    <option value="Portugues" label="Portugues"></option>
+                    <option value="English" label="English"></option>
+                </select>
+
+                <button type="button" id="button"><b>Entrar</b></button>
+            </div>
+        </div>
+
+        <div id="body-middle">
+
+            <div>
+                <h1>Filmes, séries e muito mais, sem limites</h1>
+            </div>
+            <div>
+                <h2>Assista onde quiser. Cancele quando quiser.</h2>
+            </div>
+            <div>
+                <h3>
+                    Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+                </h3>
+            </div>
+
+            <div class="email-container">
+                <input type="email" name="email" id="email-topo" placeholder="Email">
+                <div>
+                    <button type="button" id="button-lets-go-topo"><b>Vamos lá ></b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-bottom-block">
+            <div class="svg-div">
+                <img id="popcorn-bucket" src="../Netflix-Clone-Site/img/teste-removebg-preview.png" alt="">
+                <div>
+
+                    <div>
+                        <h2>A Netflix que você adora por apenas R$ 18,90.</h2>
+                    </div>
+
+                    <div>
+                        <h3>Assine o plano Padrão com anúncios.</h3>
+                    </div>
+
+                    <div style="display: flex;">
+                        <h3><a href="">Saiba mais</a></h3>
+                        <h3 style="margin-left: 5px; font-size: 28px;"><a style="text-decoration: none;" href="">></a>
+                        </h3>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="middle-bottom-block-2">
+        <div
+            style="display: flex; justify-content: center; text-align: left; align-items: center; flex-wrap: wrap; padding-top: 90px;">
+            <div style="min-width: 300px; margin-right: 25px;">
+                <h1 style="font-weight: 900; margin-bottom: 10px; font-size: min(6.5vw, 48px); color: white;">Aproveite
+                    na TV</h1>
+                <p style="font-size: min(3.5vw, 22px); color: white;">
+                    Assista em Smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, aparelhos de Blu-ray e outros
+                    dispositivos.
+                </p>
+            </div>
+
+            <div>
+                <img src="../Netflix-Clone-Site/img/img1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 4px rgb(43, 43, 43) solid;">
+    </div>
+
+    <div class="middle-bottom-block-3">
+        <div
+            style="display: flex; justify-content: center; text-align: left; align-items: center; flex-wrap: wrap-reverse; padding-top: 30px;">
+
+            <div>
+                <img src="../Netflix-Clone-Site/img/img2.png" alt="">
+            </div>
+
+            <div style="min-width: 300px; margin-left: 25px;">
+                <h1 style="font-weight: 900; margin-bottom: 10px; font-size: min(6.5vw, 48px); color: white;">Assista
+                    onde quiser</h1>
+                <p style="font-size: min(3.5vw, 22px); color: white;">
+                    Assista a quantos filmes e séries quiser no celular,<br> tablet, laptop e TV.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 4px rgb(43, 43, 43) solid;">
+    </div>
+
+    <div class="middle-bottom-block-4">
+        <div
+            style="display: flex; justify-content: center; text-align: left; align-items: center; flex-wrap: wrap; padding-top: 30px;">
+            <div style="min-width: 300px; margin-right: 25px;">
+                <h1 style="font-weight: 900; margin-bottom: 10px; font-size: min(6.5vw, 48px); color: white;">Crie
+                    perfis para crianças</h1>
+                <p style="font-size: min(3.5vw, 22px); color: white;">
+                    Deixe as crianças se aventurarem com seus <br> personagens favoritos em um espaço feito só para
+                    <br>elas, sem pagar a mais por isso.
+                </p>
+            </div>
+
+            <div>
+                <img style="width: 95%;" src="../Netflix-Clone-Site/img/img3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 4px rgb(43, 43, 43) solid;">
+    </div>
+
+    <div class="middle-bottom-block-5">
+        <div
+            style="display: flex; justify-content:center; text-align: left; align-items: center; flex-wrap: wrap-reverse; padding-top: 30px;">
+
+            <div>
+                <img src="../Netflix-Clone-Site/img/img4.png" alt="">
+            </div>
+
+            <div style="min-width: 300px; max-width: 50%; margin-left: 25px;">
+                <h1 style="font-weight: 900; margin-bottom: 10px; font-size: min(6.5vw, 48px); color: white;">Baixe
+                    séries para assistir offline</h1>
+                <p style="font-size: min(3.5vw, 22px); color: white;">
+                    Assista em um avião, trem ou submarino...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 4px rgb(43, 43, 43) solid;">
+    </div>
+
+
+        <div class="div-faq" style="padding: 15px 0; background-color: black;">
+            <h1 class="faq-title">Perguntas frequentes</h1>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h2 class="faq-question">O que é a Netflix?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+                        <p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e
+                            documentários
+                            premiados em milhares de aparelhos conectados à internet.</p>
+                        <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço
+                            mensal
+                            acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e
+                            filmes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h2 class="faq-question">Quanto custa a Netflix?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+
+                        <p>
+                            Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por
+                            uma taxa mensal única. Os planos variam de R$ 18,90 a R$ 55,90 por mês. Sem contrato nem
+                            taxas extras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <h2 class="faq-question">Onde posso assistir?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+
+                        <p>
+                            Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para
+                            começar a assistir no computador ou em qualquer aparelho conectado à Internet compatível com
+                            o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e
+                            videogames.
+                        </p>
+                        <p>
+                            Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou
+                            Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com
+                            a Internet. Leve a Netflix com você para qualquer lugar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <h2 class="faq-question">Como faço para cancelar?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+
+                        <p>
+                            A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na
+                            internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou
+                            encerrar a sua assinatura a qualquer momento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <h2 class="faq-question">O que eu posso assistir na Netflix?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+
+                        <p>
+                            A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix
+                            premiados e muito mais. Assista o quanto quiser, quando quiser.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+
+                    <h2 class="faq-question">A Netflix é adequada para crianças?<span class="toggle-icon"></span></h2>
+                    <div class="faq-answer">
+
+                        <p>
+                            A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se
+                            divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos
+                            responsáveis.
+                        </p>
+                        <p>
+                            O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN,
+                            permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear
+                            títulos específicos que você não quer que elas assistam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Repita os .faq-item para outras perguntas -->
+            </div>
+
+            <div style="margin: 25px 35px; text-align: center;">
+
+                <h2 style="font-size: min(3.8vw , 22px); font-weight: normal; padding: 25px 0 15px; color: white;">
+                    Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.
+                </h2>
+                <div>
+                    <div class="email-container">
+                        <input type="email" name="email" id="email-footer" placeholder="Email">
+                        <div>
+                            <button type="button" id="button-lets-go-footer"><b>Vamos lá ></b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var faqQuestions = document.querySelectorAll('.faq-question');
+                var faqAnswers = document.querySelectorAll('.faq-answer');
+
+                faqQuestions.forEach(function (question) {
+                    question.addEventListener('click', function () {
+                        // Primeiro, fechamos todas as respostas que estão abertas e removemos a classe 'active'
+                        faqAnswers.forEach(function (answer) {
+                            if (answer !== question.nextElementSibling) { // Verificamos se a resposta não é a irmã do elemento clicado
+                                answer.classList.remove('open');
+                                answer.previousElementSibling.classList.remove('active'); // Remove 'active' da pergunta relacionada
+                            }
+                        });
+
+                        // Agora, alternamos a resposta da pergunta clicada
+                        var answer = this.nextElementSibling;
+                        answer.classList.toggle('open');
+                        this.classList.toggle('active'); // Adicionamos ou removemos 'active' da pergunta clicada
+                    });
+                });
+            });
+        </script>
+    
+    <footer>
+        <div style="border: 4px rgb(43, 43, 43) solid;">
+        </div>
+
+        <div class="footer">
+            <div style="display: flex; margin-bottom: 25px;">
+                <h3>Dúvidas? Ligue</h3>
+                <div style="margin-left: 5px;">
+                    <h3 style="text-decoration: underline;">0800 591 2876</h3>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="">Perguntas frequentes</a></li>
+                    <li><a href="">Central de Ajuda</a></li>
+                    <li><a href="">Conta</a></li>
+                    <li><a href="">Media Center</a></li>
+                    <li><a href="">Relações com investidores</a></li>
+                    <li><a href="">Carreiras</a></li>
+                    <li><a href="">Resgatar cartão pré-pago</a></li>
+                    <li><a href="">Comprar cartão pré-pago</a></li>
+                    <li><a href="">Formas de assisir</a></li>
+                    <li><a href="">Termos de Uso</a></li>
+                    <li><a href="">Privacidade</a></li>
+                    <li><a href="">Preferências de cookies</a></li>
+                    <li><a href="">Informações corporativas</a></li>
+                    <li><a href="">Entre em contato</a></li>
+                    <li><a href="">Testde de velocidade</a></li>
+                    <li><a href="">Avisos legais</a></li>
+                    <li><a href="">Só na Netflix</a></li>
+                </ul>
+            </div>
+            <div class="language-and-button" style="margin-top: 25px;">
+                <select name="idioma" id="idioma-footer">
+                    <option value="Portugues" label="Portugues"></option>
+                    <option value="English" label="English"></option>
+                </select>
+            </div>
+            <div
+                style="margin-top: 15px; padding-bottom: 50px; font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif; ">
+                <h4 style="font-weight: lighter; color: rgba(255,255,255,0.7)">Netflix Brasil</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
