@@ -85,6 +85,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative;
+}
+
+.search-bar img {
+    filter: invert(100%)
 }
 
 .search-buttons {
@@ -94,14 +99,23 @@ body {
 }
 
 .search-bar input {
-    padding: 10px;
+    padding: 13px 0;
     margin: 15px;
     width: 550px;
     max-width: 90%;
-    background-color: #303134;
+    background-color: rgb(32, 33, 36);
+    background: url(./imgs/lupa.png) no-repeat 13px 10px;
+    padding-left: 25px;
+    background-size: 20px;
     color: white;
-    border: transparent;
+    border: 1px solid #6d7075;
     border-radius: 20px;
+    padding-left: 40px;
+}
+
+.search-bar input:hover {
+    background-color: #303134;
+    border: 1px solid transparent;
 }
 
 .search-buttons button {
@@ -114,5 +128,5 @@ body {
 }
 
 .search-buttons button:hover{
-    border: 1px solid white ;
+    border: 1px solid #6d7075 ;
 }
