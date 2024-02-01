@@ -107,8 +107,8 @@ body {
 #search-barra {
     padding: 13px 0;
     margin: 15px;
-    width: 550px;
-    max-width: 90%;
+    width: 550px; 
+    max-width: 95%;   
     background-color: rgb(32, 33, 36);
     background: url(./imgs/lupa.png) no-repeat 13px 10px;
     background-size: 20px;
@@ -125,6 +125,7 @@ body {
     transform: translateY(-200%);
     left: 200px;
     filter: invert(80%);
+    
 }
 
 .search-bar-icons img {
@@ -148,7 +149,7 @@ body {
     color: white;
     border: 1px solid #303134;
     border-radius: 3px;
-    margin: 10px;
+    margin: 0 10px 0 10px;
 }
 
 .search-buttons button:hover{
