@@ -87,8 +87,11 @@ body {
 
 .search-bar {
     display: flex;
+    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
     justify-content: center;
-    align-items: end;
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+   
 }
 
 .search-bar img {
@@ -101,7 +104,7 @@ body {
     align-items: end;
 }
 
-.search-bar input {
+#search-barra {
     padding: 13px 0;
     margin: 15px;
     width: 550px;
@@ -119,10 +122,9 @@ body {
 .search-bar-icons {
     display: flex;
     position: relative;
-    transform: translateY(-100%);
-    right: 150px;
+    transform: translateY(-200%);
+    left: 200px;
     filter: invert(80%);
-    
 }
 
 .search-bar-icons img {
