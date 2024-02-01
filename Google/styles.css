@@ -34,8 +34,13 @@ body {
     text-decoration: underline;
 }
 
-#acc-btn:hover, #pages-btn:hover {
-    border: 5px outset white;
+#acc-btn:hover {
+    box-shadow: 0 0 2px 5px #303134;
+}
+
+#pages-btn:hover {
+    box-shadow: 0 0 2px 3px #303134;
+    background-color: #303134;
 }
 
 .dropdown {
@@ -115,6 +120,12 @@ body {
 
 .search-bar input:hover {
     background-color: #303134;
+    border: 1px solid transparent;
+}
+
+.search-bar input:focus {
+    background-color: #303134;;
+    outline: none;
     border: 1px solid transparent;
 }
 
