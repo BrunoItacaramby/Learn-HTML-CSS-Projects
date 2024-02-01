@@ -91,7 +91,6 @@ body {
     justify-content: center;
     align-items: center; /* Centraliza verticalmente */
     position: relative;
-   
 }
 
 .search-bar img {
@@ -108,7 +107,7 @@ body {
     padding: 13px 0;
     margin: 15px;
     width: 550px; 
-    max-width: 95%;   
+    max-width: 95%;  
     background-color: rgb(32, 33, 36);
     background: url(./imgs/lupa.png) no-repeat 13px 10px;
     background-size: 20px;
@@ -117,6 +116,7 @@ body {
     border-radius: 20px;
     padding-left: 40px;    
     font-size: 16px;
+    padding-right: 150px;
 }
 
 .search-bar-icons {
@@ -125,6 +125,33 @@ body {
     transform: translateY(-200%);
     left: 200px;
     filter: invert(80%);
+}
+
+#search-barra::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media (max-width: 515px) {
+    .search-bar-icons {
+        left: 170px;
+    }
+
+    #search-barra {
+        padding-right: 130px;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 540px) {
+    .search-bar-icons {
+        left: 180px;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 565px) {
+    .search-bar-icons {
+        left: 190px;
+    }
 }
 
 .search-bar-icons img {
