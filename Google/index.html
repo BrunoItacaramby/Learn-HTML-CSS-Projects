@@ -28,7 +28,7 @@
         <img src="./imgs/logo.png" alt="">
     </div>
 
-    <div class="search-bar">      
+    <div class="search-bar">
         <input id="search-barra" type="search" name="search-bar">
         <div class="search-bar-icons">
             <img id="keyboard" src="./imgs/keyboard.png" alt="">
@@ -37,11 +37,30 @@
         </div>
     </div>
 
-    
+
     <div class="search-buttons">
         <button>Pesquisa Google</button>
         <button>Estou com sorte</button>
     </div>
+
+    <script>
+        const searchBar = document.getElementById('search-barra');
+
+        searchBar.addEventListener('input', function () {
+            if (searchBar.value.trim() === '') {
+                searchBar.style.backgroundImage = "url('./imgs/lupa.png')";
+            } else {
+                searchBar.style.backgroundImage = "url('./imgs/lupa.png'), url('./imgs/x.png')";
+            }
+        });
+
+        searchBar.addEventListener('click', function (event) {
+            if (searchBar.style.backgroundImage.includes('./imgs/x.png') && event.offsetX > searchBar.offsetWidth - 175) {
+                searchBar.value = '';
+                searchBar.style.backgroundImage = "url('./imgs/lupa.png')";
+            }
+        });
+    </script>
 
 </body>
 

@@ -167,6 +167,16 @@ body {
     }
 }
 
+#search-barra.no-text {
+    background-image: url('./imgs/lupa.png');
+    background-position: 13px 12px;
+}
+
+#Search-Barra.has-text {
+    background-image: url('./imgs/lupa.png'), url('./imgs/x.png');
+    background-position: 13px 12px ,72%;
+}
+
 .search-bar-icons img {
     padding: 0 8px;
 }
