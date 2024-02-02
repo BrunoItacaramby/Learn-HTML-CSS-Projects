@@ -127,6 +127,7 @@ body {
     transform: translateY(-145%);
     left: 200px;
     filter: invert(80%);
+    cursor: pointer;
 }
 
 #search-barra::-webkit-search-cancel-button {
@@ -229,6 +230,7 @@ body {
     border: 1px solid #303134;
     border-radius: 3px;
     margin: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 .search-buttons button:hover {
@@ -275,4 +277,5 @@ footer {
 .subfooter-one span:hover,
 .subfooter-two span:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
