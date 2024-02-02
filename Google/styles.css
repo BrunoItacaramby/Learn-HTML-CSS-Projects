@@ -272,6 +272,7 @@ footer {
     font-size: 15px;
 }
 
-.subfooter-one span:hover, .subfooter-two span:hover {
+.subfooter-one span:hover,
+.subfooter-two span:hover {
     text-decoration: underline;
 }
