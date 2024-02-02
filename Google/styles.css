@@ -234,3 +234,44 @@ body {
 .search-buttons button:hover {
     border: 1px solid #6d7075;
 }
+
+.blank-space {
+    height: 25.5vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-one {
+    color: white;
+    padding: 20px 35px;
+    border-bottom: 1px solid #6d7075;
+    background-color: #161617;
+    font-size: 15px;
+}
+
+.footer-two {
+    display: flex;
+    color: white;
+    padding: 20px 0;
+    background-color: #161617;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.subfooter-one span {
+    margin-left: 35px;
+    font-size: 15px;
+}
+
+.subfooter-two span {
+    margin-right: 35px;
+    font-size: 15px;
+}
+
+.subfooter-one span:hover, .subfooter-two span:hover {
+    text-decoration: underline;
+}
