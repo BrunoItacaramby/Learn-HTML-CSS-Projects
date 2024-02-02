@@ -87,9 +87,9 @@ body {
 
 .search-bar {
     display: flex;
-    flex-direction: column; /* Alterado para coluna para centralizar verticalmente */
+    flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
     position: relative;
 }
 
@@ -124,7 +124,7 @@ body {
 .search-bar-icons {
     display: flex;
     position: relative;
-    transform: translateY(-208%);
+    transform: translateY(-145%);
     left: 200px;
     filter: invert(80%);
 }
@@ -132,6 +132,39 @@ body {
 #search-barra::-webkit-search-cancel-button {
     -webkit-appearance: none;
     appearance: none;
+}
+
+.keyboard-hover, .mic-hover, .camera-hover {
+    display: none;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    position: absolute;    
+    filter: invert(100%);
+    padding: 8px;
+    border: 2px #303134 solid;
+    border-radius: 5px;
+}
+
+.keyboard-hover {
+    margin: 30px 0 0 -130px;
+}
+
+.mic-hover {
+    margin: 30px 0 0 -10px;
+}
+
+.camera-hover {
+    margin: 30px 0 0 0;
+}
+
+.keyboard-hover h3, .mic-hover h3, .camera-hover h3  {
+    font-size: 11px;
+    white-space: nowrap;
+    color: white;
+}
+
+#keyboard:hover + .keyboard-hover, #mic:hover + .mic-hover, #camera:hover + .camera-hover {
+    display: block;
 }
 
 @media (max-width: 515px) {
@@ -168,7 +201,7 @@ body {
 }
 
 .search-bar-icons img {
-    padding: 0 8px;
+    padding: 8px 8px;
 }
 
 #search-barra:hover {
