@@ -13,7 +13,16 @@
     justify-content: center;
 }
 
-.intro-img img {
+.intro-img img, .intro-svg {
     max-width: 100%;
     height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
 }
