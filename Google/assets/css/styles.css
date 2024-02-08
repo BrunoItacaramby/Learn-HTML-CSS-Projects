@@ -174,18 +174,7 @@ body {
     display: block;
 }
 
-/* @media (max-width: 459px) {
-    .search-bar-icons {
-        left: 150px;
-    }
-
-    #search-barra {
-        padding-right: 150px;
-        background-position: 13px 12px, 70%;
-    }
-} */
-
- @media (max-width: 399px) {
+@media (max-width: 399px) {
     .search-bar-icons {
         left: 100px;
         padding-left: 15px;
@@ -195,9 +184,22 @@ body {
         padding-right: 165px;
         background-position: 13px 12px, 60%;
     }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
 }
-
-
 
 @media (min-width: 400px) and (max-width: 419px) {
     .search-bar-icons {
@@ -208,6 +210,20 @@ body {
     #search-barra {
         padding-right: 165px;
         background-position: 13px 12px, 65%;
+    }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
     }
 }
 
@@ -221,6 +237,20 @@ body {
         padding-right: 165px;
         background-position: 13px 12px, 66%;
     }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 445px) and (max-width: 459px) {
@@ -232,6 +262,20 @@ body {
     #search-barra {
         padding-right: 170px;
         background-position: 13px 12px, 67%;
+    }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
     }
 }
 
@@ -246,6 +290,20 @@ body {
         padding-right: 180px;
         background-position: 13px 12px, 67%;
     }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 516px) and (max-width: 540px) {
@@ -257,6 +315,20 @@ body {
         padding-right: 170px;
         background-position: 13px 12px, 71%;
     }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 541px) and (max-width: 565px) {
@@ -265,8 +337,53 @@ body {
     }
 
     #search-barra {
-        padding-right: 130px;
+        padding-right: 180px;
         background-position: 13px 12px, 72%;
+    }
+
+    .subfooter-two span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-one span {
+        display: flex;
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 566px) and (max-width: 895px) {
+    .footer-two {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subfooter-two {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .subfooter-one {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .subfooter-one span {
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
+    }
+
+    .subfooter-two span {
+        white-space: nowrap;
+        padding: 5px 5px;
+        margin: 0 auto;
     }
 }
 
@@ -308,6 +425,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
 }
 
 .footer-one {
