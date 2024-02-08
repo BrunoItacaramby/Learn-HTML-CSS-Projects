@@ -174,14 +174,77 @@ body {
     display: block;
 }
 
-@media (max-width: 515px) {
+/* @media (max-width: 459px) {
     .search-bar-icons {
-        left: 170px;
+        left: 150px;
     }
 
     #search-barra {
-        padding-right: 130px;
+        padding-right: 150px;
         background-position: 13px 12px, 70%;
+    }
+} */
+
+ @media (max-width: 399px) {
+    .search-bar-icons {
+        left: 100px;
+        padding-left: 15px;
+    }
+
+    #search-barra {
+        padding-right: 165px;
+        background-position: 13px 12px, 60%;
+    }
+}
+
+
+
+@media (min-width: 400px) and (max-width: 419px) {
+    .search-bar-icons {
+        left: 120px;
+        padding-left: 15px;
+    }
+
+    #search-barra {
+        padding-right: 165px;
+        background-position: 13px 12px, 65%;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 444px) {
+    .search-bar-icons {
+        left: 130px;
+        padding-left: 15px;
+    }
+
+    #search-barra {
+        padding-right: 165px;
+        background-position: 13px 12px, 66%;
+    }
+}
+
+@media (min-width: 445px) and (max-width: 459px) {
+    .search-bar-icons {
+        left: 135px;
+        padding-left: 15px;
+    }
+
+    #search-barra {
+        padding-right: 170px;
+        background-position: 13px 12px, 67%;
+    }
+}
+
+
+@media (min-width: 460px) and (max-width: 515px) {
+    .search-bar-icons {
+        left: 145px;
+        padding-left: 15px;
+    }
+
+    #search-barra {
+        padding-right: 180px;
+        background-position: 13px 12px, 67%;
     }
 }
 
@@ -191,7 +254,7 @@ body {
     }
 
     #search-barra {
-        padding-right: 130px;
+        padding-right: 170px;
         background-position: 13px 12px, 71%;
     }
 }
