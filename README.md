@@ -1,0 +1,1 @@
+<h3>Este repositório contém uma coleção de sites que criei do zero como parte da minha prática em HTML e CSS. Cada site é um pequeno projeto independente, projetado para aprimorar minhas habilidades de desenvolvimento web. Sinta-se à vontade para explorar os diferentes projetos e verificar meu progresso no aprendizado de HTML e CSS.</h3>
