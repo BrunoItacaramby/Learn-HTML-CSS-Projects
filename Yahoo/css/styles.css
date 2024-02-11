@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
-h3, h4 {
+h1, h3, h4 {
     font-family: Roboto,helvetica neue,helvetica,arial,sans-serif;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 23px;
 }
 
 .logo-container {
@@ -14,6 +23,7 @@ h3, h4 {
     justify-content: space-between;
     align-items: center;
     margin-left: 80px;
+    padding-bottom: 100px;
 }
 
 .logo img {
@@ -40,8 +50,7 @@ h3, h4 {
 }
 
 .temp h3 {
-    display: flex;    
-    font-size: 23px;
+    display: flex;
     font-weight: normal;
     padding-left: 10px;
 }
@@ -50,11 +59,43 @@ h3, h4 {
     display: block;
     position: relative;
     top: 30px;
-    font-weight: normal;
     right: 70px;
-    font-size: 15px;
 }
 
 #moon {
     width: 35px;
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.content span {
+    color: #1A0DAB;
+    font-weight: bold;
+}
+
+.content span:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: end;   
+    padding-bottom: 15px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    width: 35%;
+    padding: 15px 0;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 25px;
 }
