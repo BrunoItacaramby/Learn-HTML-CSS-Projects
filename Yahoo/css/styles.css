@@ -32,7 +32,8 @@ h3 {
 
 .buttons-container { 
     align-items: center;
-    display: flex;    
+    display: flex; 
+    position: relative;   
 }
 
 .buttons {    
@@ -112,7 +113,8 @@ h3 {
     background-repeat: no-repeat;
     border-radius: 25px;
     font-size: 20px;
-    padding-left: 50px;    
+    padding-left: 50px;
+    padding-right: 85px;    
 }
 
 #search-bar:hover {
@@ -135,7 +137,7 @@ h3 {
     cursor: pointer;
 }
 
-.mic-hover {
+.mic-hover, .apps-hover, .email-hover {
     display: none;
     width: fit-content;
     padding: 8px;
@@ -152,3 +154,35 @@ h3 {
 #img-mic:hover + .mic-hover {
     display: block;
 }
+
+.email-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 30px;
+    left: 23px;
+}
+
+#img-email:hover + .email-hover, #img-apps:hover + .apps-hover  {
+    display: block;
+}
+
+.apps-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 30px;
+    left: 90px;
+} 
