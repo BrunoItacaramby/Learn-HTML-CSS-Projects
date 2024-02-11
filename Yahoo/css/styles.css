@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-h1, h3, h4 {
+h1, h3, h4, h5 {
     font-family: Roboto,helvetica neue,helvetica,arial,sans-serif;
     font-weight: normal;
 }
@@ -116,7 +116,7 @@ h3 {
 }
 
 #search-bar:hover {
-    box-shadow: 2px 5px 5px rgb(216, 216, 216)
+    box-shadow: 2px 5px 5px rgb(216, 216, 216);
 }
 
 #search-bar::-webkit-search-cancel-button {
@@ -128,4 +128,27 @@ h3 {
     position: relative;
     transform: translateY(5%);
     right: 3.5rem;
+}
+
+#img-mic {
+    padding: 15px 2px;
+    cursor: pointer;
+}
+
+.mic-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 55px;
+    left: -45px;
+}
+
+#img-mic:hover + .mic-hover {
+    display: block;
 }
