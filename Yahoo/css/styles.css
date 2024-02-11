@@ -91,11 +91,41 @@ h3 {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.search-container span {
+    position: relative;
+    right: 4.5rem;
+    font-size: 18px;
 }
 
 #search-bar {
-    width: 35%;
+    margin: 0 15px;
+    width: 650px;
+    min-width: 35%;
     padding: 15px 0;
     border: 1px solid rgb(133, 133, 133);
+    background: url(../img/lupa.png);
+    background-size: 22px;
+    background-position: 18px 15px;
+    background-repeat: no-repeat;
     border-radius: 25px;
+    font-size: 20px;
+    padding-left: 50px;    
+}
+
+#search-bar:hover {
+    box-shadow: 2px 5px 5px rgb(216, 216, 216)
+}
+
+#search-bar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.icon {
+    position: relative;
+    transform: translateY(5%);
+    right: 3.5rem;
 }
