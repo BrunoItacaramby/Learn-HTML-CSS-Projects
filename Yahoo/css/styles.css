@@ -42,10 +42,15 @@ h3 {
 
 .buttons {    
     display: flex;
+    align-items: center;
 }
 
 .buttons img {
     padding: 0 35px;
+}
+
+#img-email {
+   width: 90px;  
 }
 
 .temp {
@@ -257,4 +262,8 @@ footer {
     background-color: rgba(5, 5, 5, 0.466); /* Opacidade de 30% preta */
     display: none; /* Por padrão, o overlay é oculto */
     z-index: 1; /* Garante que o overlay esteja acima de outros elementos */
+}
+
+.footer-content span:hover {
+    color: #1A0DAB;
 }
