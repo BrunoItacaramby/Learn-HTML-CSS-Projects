@@ -244,14 +244,14 @@ footer {
 }
 
 .footer-content span {
-    padding: 25px 18px;
+    padding: 25px 11px;
     color: #8b8b8b;
 }
 
 .footer-content :nth-child(6) {
     background-image: url(../img/gear.png);
     background-position: 0 22px;
-    background-size: 20px;
+    background-size: 18px;
     background-repeat: no-repeat;
     padding-left: 25px;
     padding-right: 85px;
@@ -282,8 +282,7 @@ footer {
     top: 40px;
     left: -40px;
     background-color: white;
-    z-index: 3;
-    
+
 }
 
 .apps-window-content {
@@ -322,14 +321,14 @@ footer {
 }
 
 .email-container span {
-    position: relative; 
-    top: 22px; 
+    position: relative;
+    top: 22px;
     right: 51px;
 }
 
 .statistic-container span {
-    position: relative; 
-    top: 22px; 
+    position: relative;
+    top: 22px;
     right: 60px;
 }
 
@@ -337,7 +336,6 @@ footer {
     display: flex;
     position: relative;
     justify-content: space-between;
-    
     top: 35px;
     border-top: 1px solid black;
     align-items: center;
@@ -346,12 +344,13 @@ footer {
 .apps-window-footer span {
     margin-top: 10px;
     padding: 15px 0 5px 0;
+    cursor: pointer;
 }
 
 .apps-window-footer :nth-child(2) {
-    background-image: url(../img/gear.png);
+    background-image: url(../img/gear1.png);
     background-position: 9px 12px;
-    background-size: 20px;
+    background-size: 18px;
     background-repeat: no-repeat;
     padding-left: 35px;
 }
@@ -366,3 +365,11 @@ footer {
     box-shadow: 0 0 10px 5px rgb(216, 216, 216);
 }
 
+.apps-window-footer :nth-child(2):hover {
+    background-image: url(../img/gear-blue.png);
+    color: #0919bc;
+}
+
+.apps-window-footer :nth-child(1):hover {
+    color: #0919bc;
+}
