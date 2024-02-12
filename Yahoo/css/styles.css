@@ -267,3 +267,25 @@ footer {
 .footer-content span:hover {
     color: #1A0DAB;
 }
+
+.apps-window {
+    position: absolute;
+}
+
+#email-empty-purple-button {
+    background-image: url(../img/email-purple-empty.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#statistc-empty-purple-button {
+    background-image: url(../img/statistic-purple-empty.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
