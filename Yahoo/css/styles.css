@@ -253,7 +253,6 @@ footer {
     background-position: 0 22px;
     background-size: 20px;
     background-repeat: no-repeat;
-    border-radius: 25px;
     padding-left: 25px;
     padding-right: 85px;
     position: absolute;
@@ -289,7 +288,7 @@ footer {
 
 .apps-window-content {
     box-shadow: 2px 5px 5px rgb(216, 216, 216);
-    height: 180px;
+    height: 170px;
     padding: 0 15px;
     border-radius: 10px;
 }
@@ -338,23 +337,23 @@ footer {
     display: flex;
     position: relative;
     justify-content: space-between;
-    padding: 15px 0;
-    top: 50px;
+    
+    top: 35px;
     border-top: 1px solid black;
+    align-items: center;
 }
 
 .apps-window-footer span {
-    margin: 8px 15px;
+    margin-top: 10px;
+    padding: 15px 0 5px 0;
 }
 
 .apps-window-footer :nth-child(2) {
     background-image: url(../img/gear.png);
+    background-position: 9px 12px;
+    background-size: 20px;
     background-repeat: no-repeat;
-    background-size: 50px;
-    display: flex;
-    width: 70px;
-    height: 70px;
-
+    padding-left: 35px;
 }
 
 #statistc-empty-purple-button:hover {
