@@ -280,6 +280,22 @@ footer {
 
 .apps-window {
     position: absolute;
+    top: 40px;
+    left: -40px;
+    background-color: white;
+    z-index: 3;
+    
+}
+
+.apps-window-content {
+    box-shadow: 2px 5px 5px rgb(216, 216, 216);
+    height: 180px;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.apps-window-buttons {
+    display: flex;
 }
 
 #email-empty-purple-button {
@@ -289,6 +305,9 @@ footer {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    cursor: pointer;
 }
 
 #statistc-empty-purple-button {
@@ -298,4 +317,53 @@ footer {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    cursor: pointer;
 }
+
+.email-container span {
+    position: relative; 
+    top: 22px; 
+    right: 51px;
+}
+
+.statistic-container span {
+    position: relative; 
+    top: 22px; 
+    right: 60px;
+}
+
+.apps-window-footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 0;
+    top: 50px;
+    border-top: 1px solid black;
+}
+
+.apps-window-footer span {
+    margin: 8px 15px;
+}
+
+.apps-window-footer :nth-child(2) {
+    background-image: url(../img/gear.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+
+}
+
+#statistc-empty-purple-button:hover {
+    background-image: url(../img/statistic-purple-fill.png);
+    box-shadow: 0 0 10px 5px rgb(216, 216, 216);
+}
+
+#email-empty-purple-button:hover {
+    background-image: url(../img/email-purple-fill.png);
+    box-shadow: 0 0 10px 5px rgb(216, 216, 216);
+}
+
