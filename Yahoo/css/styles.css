@@ -277,19 +277,23 @@ footer {
     color: #1A0DAB;
 }
 
+#stepdown-window {
+    display: none;
+}
+
 .apps-window {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: -40px;
     background-color: white;
-
 }
 
 .apps-window-content {
     box-shadow: 2px 5px 5px rgb(216, 216, 216);
-    height: 170px;
-    padding: 0 15px;
+    height: fit-content;
+    padding: 25px 15px 55px 15px;
     border-radius: 10px;
+   
 }
 
 .apps-window-buttons {
