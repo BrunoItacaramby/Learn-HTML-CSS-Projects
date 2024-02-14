@@ -55,4 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('img-x').addEventListener('mouseleave', function () {
         this.src = './assets/imgs/x.png';
     });
+
+    document.getElementById('img-mic').addEventListener('mouseenter', function () {
+        this.src = './assets/imgs/mic-hover.png';
+    });
+
+    document.getElementById('img-mic').addEventListener('mouseleave', function () {
+        this.src = './assets/imgs/mic.png';
+    });
 });
