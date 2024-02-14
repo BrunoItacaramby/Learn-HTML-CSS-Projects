@@ -36,6 +36,7 @@ h3 {
 
 .logo img {
     width: 150px;
+    cursor: pointer;
 }
 
 .buttons-container {
@@ -55,6 +56,7 @@ h3 {
 
 #img-email {
     width: 90px;
+    cursor: pointer;
 }
 
 .temp {
@@ -123,13 +125,13 @@ h3 {
     padding: 15px 0;
     border: 1px solid rgb(189, 188, 188);
     background: url(../img/lupa.png);
-    background-size: 22px;
-    background-position: 18px 15px;
+    background-size: 22px, 15px;
+    background-position: 18px 15px, 85%;
     background-repeat: no-repeat;
     border-radius: 25px;
     font-size: 20px;
     padding-left: 50px;
-    padding-right: 85px;
+    padding-right: 125px;
 }
 
 #search-bar:hover {
@@ -147,14 +149,25 @@ h3 {
     right: 3.5rem;
 }
 
+#img-x {
+    display: none;    
+    position: absolute;
+    right: 4rem;
+    bottom: 1.1rem;
+    cursor: pointer;
+    padding: 5px 2px;
+}
+
 #img-mic {
     padding: 15px 2px;
     cursor: pointer;
 }
 
-.mic-hover,
-.apps-hover,
-.email-hover {
+#img-apps {
+    cursor: pointer;
+}
+
+.mic-hover {
     display: none;
     width: fit-content;
     padding: 8px;
@@ -172,6 +185,10 @@ h3 {
     display: block;
 }
 
+#img-x:hover+.x-hover {
+    display: block;
+}
+
 .email-hover {
     display: none;
     width: fit-content;
@@ -184,6 +201,20 @@ h3 {
     white-space: nowrap;
     top: 30px;
     left: 23px;
+}
+
+.x-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 55px;
+    left: -80px;
 }
 
 #img-email:hover+.email-hover,
@@ -246,6 +277,7 @@ footer {
 .footer-content span {
     padding: 25px 11px;
     color: #8b8b8b;
+    cursor: pointer;
 }
 
 .footer-content :nth-child(6) {
