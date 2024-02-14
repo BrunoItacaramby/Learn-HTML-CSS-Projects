@@ -40,6 +40,8 @@ document.addEventListener('click', function (event) {
 searchBar.addEventListener('input', function () {
     if (searchBar.value) {
         x_button.style.display = 'block';
+    } else {
+        x_button.style.display = 'none';
     }
 });
 
