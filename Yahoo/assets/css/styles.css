@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h3,
+h4,
+h5,
+span {
+    font-family: Roboto, helvetica neue, helvetica, arial, sans-serif;
+    font-weight: normal;
+}
+
+span {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+.logo-container {
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 80px;
+    padding-bottom: 100px;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.buttons-container {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons img {
+    padding: 0 35px;
+}
+
+#img-email {
+    width: 90px;
+    cursor: pointer;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+}
+
+.temp h3 {
+    display: flex;
+    font-weight: normal;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.temp h4 {
+    display: block;
+    position: relative;
+    top: 30px;
+    right: 70px;
+    cursor: pointer;
+}
+
+#moon {
+    width: 35px;
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.content span {
+    color: #1A0DAB;
+    font-weight: bold;
+}
+
+.content span:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.search-container span {
+    position: relative;
+    right: 4.5rem;
+    font-size: 18px;
+    opacity: 35%;
+}
+
+#search-bar {
+    margin-left: 20px;
+    width: 650px;
+    min-width: 35%;
+    padding: 15px 0;
+    border: 1px solid rgb(189, 188, 188);
+    background: url(../imgs/lupa.png);
+    background-size: 22px, 15px;
+    background-position: 18px 15px, 85%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 125px;
+}
+
+/* #search-bar:hover {
+    box-shadow: 2px 5px 5px #D8D8D8;
+} */
+
+#search-bar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.icon {
+    position: relative;
+    transform: translateY(5%);
+    right: 3.5rem;
+}
+
+#img-x {
+    display: none;
+    position: absolute;
+    right: 4rem;
+    bottom: 1.1rem;
+    cursor: pointer;
+    padding: 5px 2px;
+}
+
+#img-mic {
+    padding: 15px 2px;
+    cursor: pointer;
+}
+
+#img-apps {
+    cursor: pointer;
+}
+
+.mic-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 55px;
+    left: -45px;
+}
+
+#img-mic:hover+.mic-hover {
+    display: block;
+}
+
+#img-x:hover+.x-hover {
+    display: block;
+}
+
+.email-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 30px;
+    left: 23px;
+}
+
+.x-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 55px;
+    left: -80px;
+}
+
+#img-email:hover+.email-hover,
+#img-apps:hover+.apps-hover {
+    display: block;
+}
+
+.apps-hover {
+    display: none;
+    width: fit-content;
+    padding: 8px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 30px;
+    left: 90px;
+}
+
+#search-bar:focus {
+    outline: none;
+    border: 1px solid transparent;
+    background-color: white;
+}
+
+.text {
+    background-color: #f0f3f5;
+    padding: 20px;
+    line-height: 1.3rem;
+    border-radius: 15px;
+    border: 1px solid rgb(228, 227, 227);
+    margin: 70px auto;
+    width: 600px;
+    height: auto;
+    max-width: 100%;
+    min-width: 25%;
+
+    color: rgb(95, 94, 94);
+}
+
+.text-container {
+    margin: 0 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+.footer-content {
+    border-top: 1px solid rgb(228, 227, 227);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content span {
+    padding: 25px 11px;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.footer-content :nth-child(6) {
+    background-image: url(../imgs/gear.png);
+    background-position: 0 22px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 85px;
+    position: absolute;
+    right: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.466);
+    /* Opacidade de 30% preta */
+    display: none;
+    /* Por padrão, o overlay é oculto */
+    z-index: 1;
+    /* Garante que o overlay esteja acima de outros elementos */
+}
+
+.footer-content span:hover {
+    color: #1A0DAB;
+}
+
+#stepdown-window {
+    display: none;
+}
+
+.apps-window {
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    background-color: white;
+}
+
+.apps-window-content {
+    box-shadow: 2px 5px 5px rgb(216, 216, 216);
+    height: fit-content;
+    padding: 25px 15px 55px 15px;
+    border-radius: 10px;
+
+}
+
+.apps-window-buttons {
+    display: flex;
+}
+
+#email-empty-purple-button {
+    background-image: url(../imgs/email-purple-empty.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    cursor: pointer;
+}
+
+#statistc-empty-purple-button {
+    background-image: url(../imgs/statistic-purple-empty.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(216, 216, 216);
+    background-color: white;
+    cursor: pointer;
+}
+
+.email-container span {
+    position: relative;
+    top: 22px;
+    right: 53px;
+}
+
+.statistic-container span {
+    position: relative;
+    top: 22px;
+    right: 60px;
+}
+
+.apps-window-footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top: 35px;
+    border-top: 1px solid black;
+    align-items: center;
+}
+
+.apps-window-footer span {
+    margin-top: 10px;
+    padding: 15px 0 5px 0;
+    cursor: pointer;
+}
+
+.apps-window-footer :nth-child(2) {
+    background-image: url(../imgs/gear1.png);
+    background-position: 9px 12px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+
+#statistc-empty-purple-button:hover {
+    background-image: url(../imgs/statistic-purple-fill.png);
+    box-shadow: 0 0 10px 5px rgb(216, 216, 216);
+}
+
+#email-empty-purple-button:hover {
+    background-image: url(../imgs/email-purple-fill.png);
+    box-shadow: 0 0 10px 5px rgb(216, 216, 216);
+}
+
+.apps-window-footer :nth-child(2):hover {
+    background-image: url(../imgs/gear-blue.png);
+    color: #0919bc;
+}
+
+.apps-window-footer :nth-child(1):hover {
+    color: #0919bc;
+}
