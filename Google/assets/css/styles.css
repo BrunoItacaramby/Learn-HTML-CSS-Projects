@@ -59,6 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 #pages-btn {
@@ -70,6 +71,7 @@ body {
     justify-content: center;
     border: 5px solid transparent;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #pages-btn img {
@@ -168,9 +170,9 @@ body {
     color: white;
 }
 
-#keyboard:hover+.keyboard-hover,
-#mic:hover+.mic-hover,
-#camera:hover+.camera-hover {
+#img-keyboard:hover+.keyboard-hover,
+#img-mic:hover+.mic-hover,
+#img-camera:hover+.camera-hover {
     display: block;
 }
 
