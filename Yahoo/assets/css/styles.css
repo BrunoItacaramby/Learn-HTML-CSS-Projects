@@ -134,9 +134,9 @@ h3 {
     padding-right: 125px;
 }
 
-#search-bar:hover {
-    box-shadow: 2px 5px 5px rgb(216, 216, 216);
-}
+/* #search-bar:hover {
+    box-shadow: 2px 5px 5px #D8D8D8;
+} */
 
 #search-bar::-webkit-search-cancel-button {
     -webkit-appearance: none;

@@ -63,4 +63,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('img-mic').addEventListener('mouseleave', function () {
         this.src = './assets/imgs/mic.png';
     });
+
+    searchBar.addEventListener('mouseenter', function () {
+        if(overlay.style.display === 'block'){
+            return
+        }else {
+            searchBar.style.boxShadow = '2px 5px 5px #D8D8D8'
+        }
+    })
+
+    searchBar.addEventListener('mouseleave', function () {
+        searchBar.style.boxShadow = 'none'
+})
+
 });
+
