@@ -124,7 +124,7 @@ h3 {
     min-width: 35%;
     padding: 15px 0;
     border: 1px solid rgb(189, 188, 188);
-    background: url(../img/lupa.png);
+    background: url(../imgs/lupa.png);
     background-size: 22px, 15px;
     background-position: 18px 15px, 85%;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ footer {
 }
 
 .footer-content :nth-child(6) {
-    background-image: url(../img/gear.png);
+    background-image: url(../imgs/gear.png);
     background-position: 0 22px;
     background-size: 18px;
     background-repeat: no-repeat;
@@ -333,7 +333,7 @@ footer {
 }
 
 #email-empty-purple-button {
-    background-image: url(../img/email-purple-empty.png);
+    background-image: url(../imgs/email-purple-empty.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 70px;
@@ -345,7 +345,7 @@ footer {
 }
 
 #statistc-empty-purple-button {
-    background-image: url(../img/statistic-purple-empty.png);
+    background-image: url(../imgs/statistic-purple-empty.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 70px;
@@ -384,7 +384,7 @@ footer {
 }
 
 .apps-window-footer :nth-child(2) {
-    background-image: url(../img/gear1.png);
+    background-image: url(../imgs/gear1.png);
     background-position: 9px 12px;
     background-size: 18px;
     background-repeat: no-repeat;
@@ -392,17 +392,17 @@ footer {
 }
 
 #statistc-empty-purple-button:hover {
-    background-image: url(../img/statistic-purple-fill.png);
+    background-image: url(../imgs/statistic-purple-fill.png);
     box-shadow: 0 0 10px 5px rgb(216, 216, 216);
 }
 
 #email-empty-purple-button:hover {
-    background-image: url(../img/email-purple-fill.png);
+    background-image: url(../imgs/email-purple-fill.png);
     box-shadow: 0 0 10px 5px rgb(216, 216, 216);
 }
 
 .apps-window-footer :nth-child(2):hover {
-    background-image: url(../img/gear-blue.png);
+    background-image: url(../imgs/gear-blue.png);
     color: #0919bc;
 }
 

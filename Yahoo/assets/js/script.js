@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.getElementById('img-x').addEventListener('mouseenter', function () {
-        this.src = './img/x-hover.png';
+        this.src = './assets/imgs/x-hover.png';
     });
 
     document.getElementById('img-x').addEventListener('mouseleave', function () {
-        this.src = './img/x.png';
+        this.src = './assets/imgs/x.png';
     });
 });
