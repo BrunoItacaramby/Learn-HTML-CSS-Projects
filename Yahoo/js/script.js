@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var searchBar = document.getElementById('search-bar');
     var x_button = document.getElementById('img-x')
 
-
-
     searchBar.addEventListener('focus', function () {
         overlay.style.display = 'block';
         searchBar.style.boxShadow = 'none'
@@ -18,46 +16,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     app_button.addEventListener('click', function (event) {
-        if(app_window.style.display === 'block') {
+        if (app_window.style.display === 'block') {
             app_window.style.display = 'none';
-        }else {
+        } else {
             app_window.style.display = 'block';
-        } 
-        event.stopPropagation();       
+        }
+        event.stopPropagation();
     });
 
-    
+    document.addEventListener('click', function (event) {
+        var isClickInsideAppWindow = app_window.contains(event.target);
 
+        if (!isClickInsideAppWindow && app_window.style.display === 'block') {
+            app_window.style.display = 'none';
+        }
+    });
 
-document.addEventListener('click', function (event) {
-    var isClickInsideAppWindow = app_window.contains(event.target);
+    searchBar.addEventListener('input', function () {
+        if (searchBar.value) {
+            x_button.style.display = 'block';
+        } else {
+            x_button.style.display = 'none';
+        }
+    });
 
-    if (!isClickInsideAppWindow && app_window.style.display === 'block') {
-        app_window.style.display = 'none';
-    }
-});
+    x_button.addEventListener('click', function () {
 
-searchBar.addEventListener('input', function () {
-    if (searchBar.value) {
-        x_button.style.display = 'block';
-    } else {
-        x_button.style.display = 'none';
-    }
-});
-
-x_button.addEventListener('click', function () {   
-       
         searchBar.focus()
         searchBar.value = '';
         x_button.style.display = 'none'
 
-});
+    });
 
-document.getElementById('img-x').addEventListener('mouseenter', function() {
-    this.src = './img/x-hover.png';
-});
+    document.getElementById('img-x').addEventListener('mouseenter', function () {
+        this.src = './img/x-hover.png';
+    });
 
-document.getElementById('img-x').addEventListener('mouseleave', function() {
-    this.src = './img/x.png';
-});
+    document.getElementById('img-x').addEventListener('mouseleave', function () {
+        this.src = './img/x.png';
+    });
 });

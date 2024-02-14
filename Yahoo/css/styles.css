@@ -150,7 +150,7 @@ h3 {
 }
 
 #img-x {
-    display: none;    
+    display: none;
     position: absolute;
     right: 4rem;
     bottom: 1.1rem;
@@ -325,7 +325,7 @@ footer {
     height: fit-content;
     padding: 25px 15px 55px 15px;
     border-radius: 10px;
-   
+
 }
 
 .apps-window-buttons {
