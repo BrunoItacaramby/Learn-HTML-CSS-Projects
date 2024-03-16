@@ -58,8 +58,6 @@ function meuEscopo () {
             resultado.style.backgroundColor = 'rgb(66, 236, 117)' // verde
         }
         resultado.style.display = 'block'
-        // resultado.style.backgroundColor = `${bg}`
-        // resultado.innerHTML = `<h2>Seu IMC é: ${imc}</h2>`
         
         console.log(imc)       
         
