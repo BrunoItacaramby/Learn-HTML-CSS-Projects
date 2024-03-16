@@ -5,7 +5,7 @@
     outline: 0;
 }
 
-h1,h5, span {
+h1,h5, span, h2 {
     font-family: sans-serif;
 }
 
@@ -36,6 +36,7 @@ body {
 
 .content {
     margin: 0 20px;
+    padding-bottom: 15px;
 }
 
 .content h1 {
@@ -82,4 +83,12 @@ body {
 
 .forms input:focus {
     border: 2px solid rgb(7, 78, 78);
+}
+
+.resultado {
+    /* background-color: rgb(66, 236, 117); */
+    /* background-color: rgb(236, 66, 66); */
+    width: fit-content;
+    padding: 2px 5px;
+    /* display: none; */
 }
