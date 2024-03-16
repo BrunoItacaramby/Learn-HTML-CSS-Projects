@@ -5,7 +5,7 @@
     outline: 0;
 }
 
-h1,h5, span, h2 {
+h1,h5, span, h2, button {
     font-family: sans-serif;
 }
 
@@ -28,9 +28,15 @@ body {
 }
 
 .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     max-width: 640px;
     background-color: white;
-    margin: 50px auto;
+    margin: 15px auto;
     border-radius: 5px;
 }
 
@@ -46,6 +52,10 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+.tabela-resultado {
+    margin-right: 100px;
 }
 
 .flex span, .flex h5 {
@@ -74,21 +84,26 @@ body {
     border: 2px solid
 }
 
-#calcular {
+button {
     margin: 20px 0;
     background-color: rgb(7, 78, 78);
     color: white;
     border: 0px;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    font-size: 25px;
+    border-radius: 15px;
 }
 
 .forms input:focus {
     border: 2px solid rgb(7, 78, 78);
 }
 
-.resultado {
+#resultado {
     /* background-color: rgb(66, 236, 117); */
     /* background-color: rgb(236, 66, 66); */
     width: fit-content;
     padding: 2px 5px;
-    /* display: none; */
+    display: none;
 }
