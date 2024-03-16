@@ -5,7 +5,11 @@
     outline: 0;
 }
 
-h1,h5, span, h2, button {
+h1,
+h5,
+span,
+h2,
+button {
     font-family: sans-serif;
 }
 
@@ -58,7 +62,8 @@ body {
     margin-right: 100px;
 }
 
-.flex span, .flex h5 {
+.flex span,
+.flex h5 {
     margin: 15px 0;
 }
 
