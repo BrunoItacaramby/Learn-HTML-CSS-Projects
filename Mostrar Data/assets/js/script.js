@@ -10,31 +10,31 @@ let mesTexto
 
 switch (diaSemana) {
     case 0:
-        diaTexto = 'domingo'
+        diaTexto = 'Domingo'
         break;
 
     case 1:
-        diaTexto = 'segunda'
+        diaTexto = 'Segunda'
         break;
 
     case 2:
-        diaTexto = 'terça'
+        diaTexto = 'Terça'
         break;
 
     case 3:
-        diaTexto = 'quarta'
+        diaTexto = 'Quarta'
         break;
 
     case 4:
-        diaTexto = 'quinta'
+        diaTexto = 'Quinta'
         break;
 
     case 5:
-        diaTexto = 'sexta'
+        diaTexto = 'Sexta'
         break;
 
     case 6:
-        diaTexto = 'sabado'
+        diaTexto = 'Sabado'
         break;
 
     default:
@@ -98,7 +98,7 @@ switch (mes) {
 
 if(min < 9){
     min.toString()
-    min = min+0
+    min = '0'+min
 }
 
 const dataAtual = document.getElementById('container')
