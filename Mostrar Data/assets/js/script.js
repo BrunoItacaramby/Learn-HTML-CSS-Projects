@@ -101,6 +101,11 @@ if(min < 9){
     min = '0'+min
 }
 
+if(hora < 9){
+    hora.toString()
+    hora = '0'+hora
+}
+
 const dataAtual = document.getElementById('container')
 
 function MostrarData() {
