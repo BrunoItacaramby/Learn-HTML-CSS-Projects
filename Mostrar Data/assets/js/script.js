@@ -96,12 +96,12 @@ switch (mes) {
         break;
 }
 
-if (min < 9) {
+if (min < 10) {
     min.toString()
     min = '0' + min
 }
 
-if (hora < 9) {
+if (hora < 10) {
     hora.toString()
     hora = '0' + hora
 }
