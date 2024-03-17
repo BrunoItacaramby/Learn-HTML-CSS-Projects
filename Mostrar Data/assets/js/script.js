@@ -14,23 +14,23 @@ switch (diaSemana) {
         break;
 
     case 1:
-        diaTexto = 'Segunda'
+        diaTexto = 'Segunda-feira'
         break;
 
     case 2:
-        diaTexto = 'Terça'
+        diaTexto = 'Terça-feira'
         break;
 
     case 3:
-        diaTexto = 'Quarta'
+        diaTexto = 'Quarta-feira'
         break;
 
     case 4:
-        diaTexto = 'Quinta'
+        diaTexto = 'Quinta-feira'
         break;
 
     case 5:
-        diaTexto = 'Sexta'
+        diaTexto = 'Sexta-feira'
         break;
 
     case 6:
@@ -100,7 +100,7 @@ if (min < 9) {
     min.toString()
     min = '0' + min
 }
-
+-feira
 if (hora < 9) {
     hora.toString()
     hora = '0' + hora
