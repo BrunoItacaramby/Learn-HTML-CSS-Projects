@@ -100,7 +100,7 @@ if (min < 9) {
     min.toString()
     min = '0' + min
 }
--feira
+
 if (hora < 9) {
     hora.toString()
     hora = '0' + hora
