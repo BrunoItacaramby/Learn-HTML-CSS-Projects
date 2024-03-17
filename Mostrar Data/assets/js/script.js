@@ -96,14 +96,14 @@ switch (mes) {
         break;
 }
 
-if(min < 9){
+if (min < 9) {
     min.toString()
-    min = '0'+min
+    min = '0' + min
 }
 
-if(hora < 9){
+if (hora < 9) {
     hora.toString()
-    hora = '0'+hora
+    hora = '0' + hora
 }
 
 const dataAtual = document.getElementById('container')
