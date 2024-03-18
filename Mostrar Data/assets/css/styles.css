@@ -8,7 +8,7 @@ body {
     background-color: rgb(7, 78, 78);
 }
 
-#container {
+.container {
     position: absolute;
     top: 0;
     left: 0;
