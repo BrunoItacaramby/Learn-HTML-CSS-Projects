@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBot Bruno!</title>
+    <title>Chat Blip</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <h1>Welcome to Blip Chat</h1>
+
     <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-<script>
-    (function () {
-        window.onload = function () {
-            new BlipChat()
-                .withAppKey('dGVzdGVyYm90MTY6ZmZiODc5MWUtNjY3YS00ZDNkLWIxNTMtMDAyODEwNDgxZWQz')
-                .withButton({"color":"#545454","icon":""})
-                .withCustomCommonUrl('https://bruno-itacaramby-tv7uh.chat.blip.ai/')
-                .build();
-        }
-    })();
-</script>
-            
-           
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('Y2hhdGJvdHRlc3RlcjM6ZGRlMTViY2UtNDE0OC00NTZiLWEzZDItYWEyZWRjZGQ2MGVl')
+                    .withButton({"color":"#0096fa","icon":""})
+                    .withCustomCommonUrl('https://bruno-itacaramby-tv7uh.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
 </body>
 </html>
